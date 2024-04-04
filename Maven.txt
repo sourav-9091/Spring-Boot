@@ -1,0 +1,78 @@
+Apache Maven
+
+Helps to manage their projects and all the things they need to build their program
+
+It builds and test the project 
+
+To run the maven in the terminal 
+
+./mvnm clean compile
+
+JRE -> Java Runtime Environment -> Set of software and tools to build and run java applicaiton -> contains JVM -> RUN them 
+JDK -> Java Developement Environment -> Superser of JRE it include everything a JRE have -> contains Java compiler -> Develope them
+
+maven is a command line only tool
+
+maven options goals phases
+
+There are 3 Phases -> like a lifecycle
+
+1. Clean -> Used to remove temporary directories and files
+2. Default -> where the most useful goals live
+3. Site -> where documentation is generated
+
+Clean :-
+
+	pre-clean -> Hook for before cleaning
+	clean -> Actual Cleaning
+	post-cleaning -> Hook for after cleaning
+
+
+
+Target Folder :- 
+	
+	It is where the maven stores all the build classes and stuffs
+
+use mvnm clean to clean the target directory
+
+Default :-
+
+	compile :- compiles your code into byte code -> Create the target directory
+	test :- runs unit tests
+	packages :- creates a jar or a war files
+	verify :- runs checks and integration tests
+
+It is in hierarchy means if you run verify first it will compile then test then package then verify
+
+JAR :- Java Archieve -> Packages all codes and dependency for distribution
+WAR :- Web Application Archieve
+
+
+Maven Project Structure
+
+src folder :- it contains main and test
+
+In test file
+
+we can add a directory called resources -> This folder contain all the static resources and maven allows to make a difference resource file for test and have differenent depency for the test files
+
+Maven Workflow
+
+to run a jar file
+
+java -jar pathToSnapshot.jar
+
+Maven Spring Boot Plugin
+
+To Run The Application
+
+./mvnm spring-boot:run
+
+Spring FrameWork vs Spring Boot
+
+FrameWork -> A chuck of code written on top of a language to solve the common problem like connecting to DB or REST API
+
+TomCat -> by apache to run and deploy java web application
+
+
+Persistence Layer -> Connection With Database with repositories and DAOs (Data Access Objects) connected with entities
